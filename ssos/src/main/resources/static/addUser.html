@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1>添加用户</h1>
+<div id="addId">
+    用户名：<input type="text" v-model="userName"><p/>
+    用户密码：<input type="text" v-model="password"><p/>
+    <input type="button" value="添加用户" @click="addUser">
+</div>
+
+<script>
+    new Vue({
+        el:"#addId",
+        data:{
+            userName:"",
+            password:"",
+            result:""
+        },
+        methods:{
+            addUser:function () {
+               var  params = new URLSearchParams();
+               params.append("userName",this.userName);
+               params.append("password",this.password);
+                axios({
+                    method:"post",
+                    url:"/addUser",
+                    data: params
+                }).then(
+                    function (r) {
+                      if (r.data = "ok"){
+                          location.href="login.html"
+                      }
+                    }
+                )
+                //    捕获异常
+                .catch(function (error) {
+                     console.log(error)
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

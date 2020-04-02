@@ -11,7 +11,7 @@ public class BeanConfig {
      @Bean(value = "userEntity")
     public UserEntity userEntity(){
         UserEntity user=new UserEntity();
-        user.setUserName("妲己");
+        user.setUserName("张飞");
         return user;
     }
 }

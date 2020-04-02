@@ -1,11 +1,11 @@
-package com.example.ssos;
+package com.example.springboots;
 
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SsosApplicationTests {
+class SpringbootsApplicationTests {
 
     @Test
     void contextLoads() {
