@@ -22,4 +22,14 @@ public class UserServiceImpl implements IUserService {
     public List<UserBean> findListUser() {
         return userDao.findListUser();
     }
+
+    /**
+     * 添加用户
+     *
+     * @param userBean
+     */
+    @Override
+    public void addUser(UserBean userBean) {
+        userDao.addUser(userBean);
+    }
 }

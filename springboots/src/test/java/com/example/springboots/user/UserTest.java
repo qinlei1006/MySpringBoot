@@ -26,4 +26,10 @@ public class UserTest {
         }
     }
 
+    @Test
+    public void addUser(){
+        UserBean userBean = new UserBean("张无忌","000999");
+        userService.addUser(userBean);
+    }
+
 }

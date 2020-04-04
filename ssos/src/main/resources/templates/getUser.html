@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取用户</title>
+</head>
+<body>
+
+<!--<span th:text="${user.userName}"></span>-->
+<!--<span th:text="${user.password}"></span><p/><p/><p/>-->
+
+
+<div th:object="${user}" align="center">
+   <span th:text="*{userName}"></span>
+    <span th:text="*{password}"></span><p/>
+</div>
+
+</body>
+</html>

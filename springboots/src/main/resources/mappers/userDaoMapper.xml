@@ -8,4 +8,8 @@
         select u_name as userName from sys_user;
    </select>
 
+    <insert id="addUser" parameterType="UserBean">
+        insert into sys_user(u_name,u_password)values (#{userName},#{password})
+    </insert>
+
 </mapper>

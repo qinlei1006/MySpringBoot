@@ -13,4 +13,10 @@ public interface IUserDao {
      * @return
      */
     public List<UserBean> findListUser();
+
+    /**
+     * 添加用户
+     * @param userBean
+     */
+    public void addUser(UserBean userBean);
 }

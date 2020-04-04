@@ -21,6 +21,15 @@ public class UserEntity {
     @Column(length = 48,name = "u_password")
     private String password;
 
+
+    public UserEntity() {
+    }
+
+    public UserEntity(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
+    }
+
     public String getUserName() {
         return userName;
     }

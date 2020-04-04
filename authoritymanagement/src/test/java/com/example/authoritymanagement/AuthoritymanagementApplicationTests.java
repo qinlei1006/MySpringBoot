@@ -1,12 +1,10 @@
-package com.example.springboots;
-
-
+package com.example.authoritymanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootsApplicationTests {
+class AuthoritymanagementApplicationTests {
 
     @Test
     void contextLoads() {

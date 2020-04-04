@@ -20,6 +20,14 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <description>Demo project for Spring Boot</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>springboots</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
